@@ -17,6 +17,7 @@
   "devDependencies": {
     "expect": "~1.6.0",
     "chai": "~2.2.0",
-    "mocha": "~2.2.4"
+    "mocha": "~2.2.4",
+    "gulp-shell": "~0.4.0"
   }
 }
