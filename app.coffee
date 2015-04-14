@@ -19,6 +19,7 @@ app.use express.static(path.join(__dirname, 'public'))
 
 app.get '/', routes.index
 app.get '/post/new', routes.newPost
+app.post '/post/new', routes.addPost
 
 # catch 404 and forward to error handler
 app.use (req, res, next) ->
