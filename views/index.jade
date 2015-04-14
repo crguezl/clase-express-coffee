@@ -1,5 +1,7 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  - each post in posts
+    .page-header
+      li
+        a(href="/post/#{post.id}")= post.title
+        .content!=post.body
