@@ -7,7 +7,7 @@ gulp.task 'default', ->
 
 gulp.task 'test', [ 'mocha' ]
 gulp.task 'mocha', ->
-  gulp.src('').pipe shell(['mocha --compilers coffee:coffee-script/register -R spec'])
+  gulp.src('').pipe shell "mocha --compilers coffee:coffee-script/register --invert --grep 'feature' -R spec"
 
 # run mongod server
 gulp.task 'mongod', ->
