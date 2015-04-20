@@ -4,6 +4,10 @@ favicon = require('serve-favicon')
 logger = require('morgan')
 cookieParser = require('cookie-parser')
 bodyParser = require('body-parser')
+
+mongoose = require "mongoose"
+mongoose.connect 'mongodb://localhost/coffeepress'
+
 routes = require('./routes/index')
 app = express()
 # view engine setup
