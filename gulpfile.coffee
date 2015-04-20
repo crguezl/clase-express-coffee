@@ -16,7 +16,6 @@ gulp.task 'mocha', ->
 # run mongod server
 gulp.task 'mongod', ->
   gulp.src('')
-    #.pipe shell([ 'mongod --config mongod.conf 2>1 > /usr/local/var/mongodb/salida &' ])
     .pipe shell('mongod --config mongod.conf')
 
 # kill mongod server
@@ -30,8 +29,11 @@ gulp.task 'killmongo', ->
 gulp.task 'ps', ->
   gulp.src('')
     .pipe shell( 'ps -fA | grep mongod')
+<<<<<<< HEAD
 
 # open in github
 gulp.task 'open', ->
   gulp.src('')
     .pipe shell('open https://github.com/crguezl/clase-express-coffee')
+=======
+>>>>>>> pl20042015
